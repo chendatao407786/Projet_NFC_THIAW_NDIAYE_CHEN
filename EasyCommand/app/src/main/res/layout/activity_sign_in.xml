@@ -9,7 +9,7 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="215dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="50dp"
@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/editText"
         android:hint="Password"
-        android:layout_width="215dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -37,14 +37,15 @@
 
     <Button
         android:id="@+id/login_button"
-
-        android:layout_width="215dp"
+        android:radius="10dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/button_unfocused"
+        android:backgroundTint="#7CCD7C"
         android:text="Sign in"
-        android:background="#7CCD7C"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,8 +67,9 @@
     <Button
         android:id="@+id/signup_button"
         android:textColor="#FFFFFF"
-        android:background="#FF3030"
-        android:layout_width="215dp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="#FF3030"
+        android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
