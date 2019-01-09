@@ -2,8 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
-const mlabUrl = 'mongodb://chendatao:Bonjour1941@ds241664.mlab.com:41664/easycommand';
-
+// const db_url = 'mongodb://chendatao:Bonjour1941@ds241664.mlab.com:41664/easycommand';
+const db_url = 'mongodb://localhost:27017/easycommand';
 const user = require('./routers/api/user');
 
 app.use(bodyParser.json());
@@ -15,7 +15,7 @@ app.use(function (req, res, next) {
 });
 
 mongoose
-    .connect(mlabUrl)
+    .connect(db_url)
     .then(() => console.log('connected'))
     .catch(err => console.log(err));
 
